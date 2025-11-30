@@ -3,15 +3,18 @@ body {
 }
 
 .gradient-roxo {
-    background-image: linear-gradient(#2c073d, #000000) !important;;
+    background-image: linear-gradient(#2c073d, #000000) !important;
+    ;
 }
 
 .icon-card {
     width: 65px !important;
-    
+
 }
-.card-personalizado{
-    width: 220px;
+
+.card-personalizado {
+    width: 180px;
+    height: 300px !important;
 }
 
 .memorare-title {
@@ -44,7 +47,35 @@ body {
     margin-left: -28px;
 }
 
-.gap-padding {
-    gap: 3rem !important;
-    padding: 0px 40px;
+
+img.homem-memorare {
+    display: block;
+    margin: 0;
+    max-width: 900px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    img.homem-memorare {
+        max-width: 900px;
+        align-items: center;
+    }
+}
+
+@media (min-width: 992px) {
+    img.homem-memorare {
+        max-width: 450px;
+    }
+}
+
+@media (min-width: 1200px) {
+    img.homem-memorare {
+        max-width: 650px;
+    }
+}
+
+@media (min-width: 1400px) {
+    img.homem-memorare {
+        max-width: 850px;
+    }
 }
