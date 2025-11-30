@@ -14,7 +14,7 @@
 
     <!-- barra de navegação -->
 
-    <nav class="navbar navbar-expand-lg gradient-navbar">
+    <nav class="navbar navbar-expand-lg gradient-roxo">
         <div class="container-fluid">
             <nav class="navbar">
                 <div class="container-fluid">
@@ -29,7 +29,7 @@
                     </div>
                 </div>
             </nav>
-            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,14 +37,14 @@
             <div class="collapse navbar-collapse navtext " id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 gap-padding mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active text-light " aria-current="page" href="./index.html">Página
+                        <a class="nav-link active text-white" aria-current="page" href="./index.html">Página
                             Inicial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-light " aria-current="page" href="./sobre.html">Quem somos</a>
+                        <a class="nav-link active text-white" aria-current="page" href="./sobre.html">Quem somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-light " aria-current="page" href="./contato.html">Contato</a>
+                        <a class="nav-link active text-white" aria-current="page" href="./contato.html">Contato</a>
                     </li>
 
                 </ul>
@@ -55,15 +55,7 @@
     <!-- fim da barra de navegação -->
 
     <!-- inicio dos banners -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./img/banner_1.png" class="d-block w-100" alt="...">
@@ -75,12 +67,12 @@
                 <img src="./img/banner_3.png" class="d-block w-100" alt="...">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
@@ -88,9 +80,74 @@
     </div>
     <!-- fim dos banners -->
 
+
+
+    <!-- inicio do flex -->
+    <div class="d-flex flex-column flex-lg-row align-items-start mt-3">
+        <div class="flex-shrink-0 text-center text-lg-start mb-3 mb-lg-0">
+            <img class="rounded w-100" src="./img/homem_memorare.png" alt="...">
+        </div>
+        <div class="flex-grow-1 ms-lg-3 p-3 p-lg-5 text-white">
+            <h4 class="memorare-title">Memorare <span class="line"></span></h4>
+            <h2>Um Memorial Digital</h2>
+            <p>Uma forma moderna e respeitosa de homenagear seus entes queridos. QR Codes personalizados que conectam
+                lápides e memoriais a perfis digitais eternos. Preserve histórias, compartilhe memórias e mantenha vivo
+                o legado de quem você ama por meio da tecnologia.</p>
+
+            <div
+                class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 g-5 text-center text-black justify-content-center mt-3">
+                <div class="col-auto">
+                    <div class="card card-personalizado h-100">
+                        <img src="./img/icon_infinito.png" class="mx-auto pd-5 mt-1 p-2 icon-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Permanente</h5>
+                            <p class="card-text">Memórias preservadas para sempre. Sem necessidade de renovação ou
+                                pagamentos recorrentes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="card card-personalizado h-100">
+                        <img src="./img/icon_coracao.png" class="mx-auto pd-5 mt-1 p-2 icon-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mantenha Viva a Memória</h5>
+                            <p class="card-text">Continue adicionando memórias, recebendo mensagens e conectando pessoas
+                                através do legado do seu ente querido.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="card card-personalizado h-100">
+                        <img src="./img/icon_estrela.png" class="mx-auto pd-5 mt-1 p-2 icon-card" alt="...">
+                        <div class="card-body w-10">
+                            <h5 class="card-title">Respeitoso e Elegante</h5>
+                            <p class="card-text">Design discreto e sensível que complementa qualquer memorial sem
+                                interferir na estética tradicional.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="card card-personalizado h-100">
+                        <img src="./img/icon_qrcode.png" class="mx-auto pd-5 mt-1 p-2 icon-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">QR Code</h5>
+                            <p class="card-text">QR Code personalizado em placas metálicas resistentes às intempéries,
+                                prontas para serem aplicadas ao memorial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- fim do flex -->
+
+
+
     <!-- inicio rodapé -->
-    <footer class="container-fluid gradient-navbar">
-        <p class="py-2 text-center text-light">© 2025 - Memorare todos os direitos reservados.</p>
+    <footer class="container-fluid gradient-roxo mt-5">
+        <p class="py-2 text-center text-white">© 2025 - Memorare todos os direitos reservados.</p>
     </footer>
     <!-- fim rodapé -->
 

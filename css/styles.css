@@ -1,9 +1,36 @@
-.gradient-navbar {
-    background-image: linear-gradient(#2c073d, #000000);
+body {
+    background-image: linear-gradient(#400e57, #010101) !important;
 }
 
+.gradient-roxo {
+    background-image: linear-gradient(#2c073d, #000000) !important;;
+}
+
+.icon-card {
+    width: 65px !important;
+    
+}
+.card-personalizado{
+    width: 220px;
+}
+
+.memorare-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.memorare-title .line {
+    width: 50px;
+    height: 5px;
+    background: #611185;
+    margin-top: 10px;
+}
+
+
 .titulo {
-    color:#ffffff;
+    color: #ffffff;
     margin-top: 10px;
     margin-left: -28px;
     font-size: 25px;
@@ -11,7 +38,7 @@
 }
 
 .subtitulo {
-    color:#ffffff;
+    color: #ffffff;
     margin-top: 10px;
     font-size: 11px;
     margin-left: -28px;
