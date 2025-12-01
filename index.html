@@ -14,7 +14,7 @@
 
     <!-- barra de navegação -->
 
-    <nav class="navbar navbar-expand-lg gradient-roxo">
+    <nav class="navbar navbar-expand-lg gradient-roxo ">
         <div class="container-fluid">
             <nav class="navbar">
                 <div class="container-fluid">
@@ -35,7 +35,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse navtext " id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto px-5 gap-5">
+                <ul class="navbar-nav ms-auto px-5 d-flex flex-column flex-lg-row gap-0 gap-lg-2">
                     <li class="nav-item">
                         <a class="nav-link active text-white" aria-current="page" href="./index.html">Página
                             Inicial</a>
@@ -82,67 +82,129 @@
 
 
 
-    <!-- inicio do flex -->
-     <div class="container mt-3">
-    <div class="d-flex flex-column flex-lg-row align-items-start">
-        <div class="flex-shrink-0 text-center text-lg-start mb-3 mb-lg-0">
-            <img class="rounded img-fluid homem-memorare" src="./img/homem_memorare.png" alt="...">
+    <!-- inicio dos planos -->
+    <div class="w-100 bg-light py-5">
+        <div class="container p-5 ">
+            <h4 class="memorare-title">Escolha o Plano Ideal <span class="line"></span></h4>
+            <h2><strong>Planos Memorare</strong></h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4 text-center mt-5">
+                <!-- Plano Bronze -->
+                <div class="col card-rotate">
+                    <div class="card h-100 border-0 shadow zoom-mouse">
+                        <div class="card-body">
+                            <img src="./img/plano_bronze.png" class="rounded mx-auto d-block h-50" alt="...">
+                            <h5 class="card-title">Individual - Bronze</h5>
+                            <p class="card-text">Ideal para homenagear uma única pessoa, preservando memórias para
+                                sempre.</p>
+                            <p class="card-text"><strong>R$ 199,00</strong></p>
+                        </div>
 
+                    </div>
+                </div>
+
+                <!-- Plano Prata -->
+                <div class="col card-rotate">
+                    <div class="card h-100 border-0 shadow zoom-mouse">
+                        <div class="card-body">
+                            <img src="./img/plano_prata.png" class="rounded mx-auto d-block h-50" alt="...">
+                            <h5 class="card-title">Casal - Prata</h5>
+                            <p class="card-text">Perfeito para homenagear duas pessoas, mantendo o legado de forma
+                                conjunta.</p>
+                            <p class="card-text"><strong>R$ 349,00</strong></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Plano Gold -->
+                <div class="col card-rotate">
+                    <div class="card h-100 border-0 shadow zoom-mouse">
+                        <div class="card-body">
+                            <img src="./img/plano_gold.png" class="rounded mx-auto d-block h-50" alt="...">
+                            <h5 class="card-title">Familiar - Gold</h5>
+                            <p class="card-text">Homenageie até 5 pessoas, ideal para famílias que querem preservar
+                                histórias juntas.</p>
+                            <p class="card-text"><strong>R$ 599,00</strong></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-grid gap-2 col-6 mx-auto mt-5">
+                <a class="btn btn-violet" href="#" role="button">DETALHES DOS NOSSOS PLANOS</a>
+            </div>
+            <a href="#"> <img class="d-block mx-auto img-fluid mt-5 promo-img" src="./img/promocao_dezembro.png" alt="" srcset=""></a>
         </div>
-        <div class="flex-grow-1 p-3 p-lg-5 text-white">
-            <h4 class="memorare-title">Memorare <span class="line"></span></h4>
-            <h2>Um Memorial Digital</h2>
-            <p>Uma forma moderna e respeitosa de homenagear seus entes queridos. QR Codes personalizados que conectam
-                lápides e memoriais a perfis digitais eternos. Preserve histórias, compartilhe memórias e mantenha vivo
-                o legado de quem você ama por meio da tecnologia.</p>
+    </div>
+    <!-- fim dos planos -->
 
-            <div class="row row-cols-2 row-cols-lg-2 gy-3 gx-5 text-center text-black justify-content-center mt-3">
-                <div class="col-auto">
-                    <div class="card card-personalizado h-100">
-                        <img src="./img/icon_infinito.png" class="mx-auto pd-5 mt-1 p-2 icon-card" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Permanente</h5>
-                            <p class="card-text">Memórias preservadas para sempre. Sem necessidade de renovação ou
-                                pagamentos recorrentes.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="card card-personalizado h-100">
-                        <img src="./img/icon_coracao.png" class="mx-auto pd-5 mt-1 p-2 icon-card" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Mantenha Viva a Memória</h5>
-                            <p class="card-text">Continue adicionando memórias, recebendo mensagens e conectando pessoas
-                                através do legado do seu ente querido.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="card card-personalizado h-100">
-                        <img src="./img/icon_estrela.png" class="mx-auto pd-5 mt-1 p-2 icon-card" alt="...">
-                        <div class="card-body w-10">
-                            <h5 class="card-title">Respeitoso e Elegante</h5>
-                            <p class="card-text">Design discreto e sensível que complementa qualquer memorial sem
-                                interferir na estética tradicional.</p>
+    <!-- inicio do flex -->
+    <div class="container mt-5">
+        <div class="d-flex flex-column flex-lg-row align-items-start">
+            <div class="flex-shrink-0 text-center text-lg-start mb-3 mb-lg-0">
+                <img class="homem-memorare d-block mx-auto img-fluid" src="./img/homem_memorare.png" alt="...">
 
+            </div>
+            <div class="flex-grow-1 p-3 p-lg-6 text-white">
+                <h4 class="memorare-title">Memorare <span class="line"></span></h4>
+                <h2>Um Memorial Digital</h2>
+                <p>Uma forma moderna e respeitosa de homenagear seus entes queridos. QR Codes personalizados que
+                    conectam
+                    lápides e memoriais a perfis digitais eternos. Preserve histórias, compartilhe memórias e mantenha
+                    vivo
+                    o legado de quem você ama por meio da tecnologia.</p>
+
+                <div class="row row-cols-2 row-cols-lg-2 gy-3 gx-5 text-center text-black justify-content-center mt-3">
+                    <div class="col-auto">
+                        <div class="card card-personalizado h-100">
+                            <img src="./img/icon_infinito.png" class="mx-auto pd-5 mt-1 p-2 icon-card" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Permanente</h5>
+                                <p class="card-text">Memórias preservadas para sempre. Sem necessidade de renovação ou
+                                    pagamentos recorrentes.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-auto">
-                    <div class="card card-personalizado h-100">
-                        <img src="./img/icon_qrcode.png" class="mx-auto pd-5 mt-1 p-2 icon-card" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">QR Code</h5>
-                            <p class="card-text">QR Code personalizado em placas metálicas resistentes às intempéries,
-                                prontas para serem aplicadas ao memorial.</p>
+                    <div class="col-auto">
+                        <div class="card card-personalizado h-100">
+                            <img src="./img/icon_coracao.png" class="mx-auto pd-5 mt-1 p-2 icon-card" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Mantenha Viva a Memória</h5>
+                                <p class="card-text">Continue adicionando memórias, recebendo mensagens e conectando
+                                    pessoas
+                                    através do legado do seu ente querido.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="card card-personalizado h-100">
+                            <img src="./img/icon_estrela.png" class="mx-auto pd-5 mt-1 p-2 icon-card" alt="...">
+                            <div class="card-body w-10">
+                                <h5 class="card-title">Respeitoso e Elegante</h5>
+                                <p class="card-text">Design discreto e sensível que complementa qualquer memorial sem
+                                    interferir na estética tradicional.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="card card-personalizado h-100">
+                            <img src="./img/icon_qrcode.png" class="mx-auto pd-5 mt-1 p-2 icon-card" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">QR Code</h5>
+                                <p class="card-text">QR Code personalizado em placas metálicas resistentes às
+                                    intempéries,
+                                    prontas para serem aplicadas ao memorial.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+        </div>
     </div>
-</div></div>
+    </div>
     <!-- fim do flex -->
 
 
@@ -152,7 +214,8 @@
         <p class="py-2 text-center text-white">© 2025 - Memorare todos os direitos reservados.</p>
     </footer>
     <!-- fim rodapé -->
-
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
