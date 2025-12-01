@@ -35,7 +35,7 @@ body {
     width: 50px;
     height: 5px;
     background: #611185;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 h4 .line2 {
@@ -45,12 +45,14 @@ h4 .line2 {
     background: #FFFFFF;
 }
 
-.memorare-title .line3 {
+h2 .line3 {
     display: inline-block;
     width: 50px;
     height: 5px;
     background: #611185;
+    margin-top: 20px;
 }
+
 
 
 .titulo {
