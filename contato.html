@@ -53,6 +53,7 @@
         <div class="row justify-content-center mb-5">
             <div class="col-md-8 col-lg-6">
                 <form class="p-4 rounded bg-dark bg-opacity-50">
+
                     <div class="mb-3">
                         <label for="nome" class="form-label">Nome completo</label>
                         <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
@@ -68,14 +69,28 @@
                         <input type="text" class="form-control" id="telefone" placeholder="(00) 00000-0000">
                     </div>
 
+                    <!-- CAMPO ASSUNTO (MODIFICADO) -->
                     <div class="mb-3">
                         <label for="assunto" class="form-label">Assunto</label>
-                        <select class="form-select" id="assunto" required>
+                        <select class="form-select" id="assunto" onchange="mostrarPlanos()" required>
                             <option value="" selected disabled>Selecione...</option>
                             <option value="planos">Dúvidas sobre planos</option>
                             <option value="suporte">Suporte técnico</option>
                             <option value="info">Informações gerais</option>
+                            <option value="comprar">Contratar plano</option>
                             <option value="outros">Outros</option>
+                        </select>
+                    </div>
+
+                    <!-- SUBOPÇÕES DE PLANOS (NOVO) -->
+                    <div class="mb-3" id="campoPlanos" style="display: none;">
+                        <label for="tipoPlano" class="form-label">Plano desejado</label>
+                        <select class="form-select" id="tipoPlano">
+                            <option value="" selected disabled>Escolha um plano...</option>
+                            <option value="individual">Plano Individual (1 pessoa)</option>
+                            <option value="casal">Plano Casal (2 pessoas)</option>
+                            <option value="familiar">Plano Familiar (5 pessoas)</option>
+                            <option value="personalizado">Plano Personalizado (mais de 5 pessoas)</option>
                         </select>
                     </div>
 
@@ -134,7 +149,19 @@
         <p class="py-2 text-center text-white">© 2025 - Memorare todos os direitos reservados.</p>
     </footer>
 
+    <!-- SCRIPTS -->
     <script>
+    function mostrarPlanos() {
+        let assunto = document.getElementById("assunto").value;
+        let campoPlanos = document.getElementById("campoPlanos");
+
+        if (assunto === "comprar") {
+            campoPlanos.style.display = "block";
+        } else {
+            campoPlanos.style.display = "none";
+        }
+    }
+
     function copiarEmail() {
         navigator.clipboard.writeText("contato@memorare.com.br")
             .then(() => {
