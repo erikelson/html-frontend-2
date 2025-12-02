@@ -12,7 +12,6 @@ body {
 
 .icon-card {
     width: 65px !important;
-
 }
 
 .icon-estatisticas {
@@ -28,7 +27,6 @@ body {
     display: flex;
     align-items: start;
     gap: 20px;
-
 }
 
 .memorare-title .line {
@@ -52,8 +50,6 @@ h2 .line3 {
     background: #611185;
     margin-top: 20px;
 }
-
-
 
 .titulo {
     color: #ffffff;
@@ -105,7 +101,6 @@ img.homem-memorare {
     }
 }
 
-
 :root {
     --bd-violet: #611185;
     --bd-violet-dark: #80409e;
@@ -138,7 +133,6 @@ img.homem-memorare {
     box-shadow: 0 0 0 0.25rem rgba(127, 90, 240, 0.5) !important;
 }
 
-
 .promo-img {
     opacity: 0.5;
     transform: translateY(0);
@@ -153,17 +147,9 @@ img.homem-memorare {
 }
 
 @keyframes pulseOpacity {
-    0% {
-        opacity: 0.5;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0.5;
-    }
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
 }
 
 .zoom-mouse {
@@ -176,27 +162,92 @@ img.homem-memorare {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-
-
-
 .card-body img {
     transform-style: preserve-3d;
     transition: transform 0.3s ease;
 }
 
-.zoom-mouse:hover~.card-body img,
-.zoom-mouse:hover+.card-body img,
+.zoom-mouse:hover ~ .card-body img,
+.zoom-mouse:hover + .card-body img,
 .zoom-mouse:hover .card-body img {
     animation: girar-horizontal 4s linear infinite;
     transform: scale(1.05);
 }
 
 @keyframes girar-horizontal {
-    from {
-        transform: rotateY(0deg);
-    }
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
 
-    to {
-        transform: rotateY(360deg);
-    }
+.team-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.35);
+    background-color: #ffffffee;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,0.45);
+}
+
+.team-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+}
+
+a .team-card {
+    cursor: pointer;
+}
+
+.icon-link {
+    text-decoration: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #8c319e !important;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:focus {
+    border-color: #8c319e !important;
+    box-shadow: 0 0 0 0.25rem rgba(140, 49, 158, 0.4) !important;
+}
+
+.accordion-button:hover {
+    background-color: #732a85 !important;
+    color: #fff !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+    transform: rotate(-180deg);
+    filter: invert(1);
+}
+
+.accordion-button:focus,
+.accordion-button:active,
+.accordion-button:not(.collapsed):focus,
+.accordion-button:not(.collapsed):active {
+    box-shadow: none !important;
+    border-color: transparent !important;
+    outline: none !important;
+}
+
+.accordion-button {
+    border: none !important;
+}
+
+.gradient-icon {
+    font-size: 1.6rem;
+    background: linear-gradient(135deg, #5a1773, #8c319e, #b043c1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
