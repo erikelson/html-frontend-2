@@ -179,31 +179,6 @@ img.homem-memorare {
     to { transform: rotateY(360deg); }
 }
 
-.team-card {
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.35);
-    background-color: #ffffffee;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.team-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,0.45);
-}
-
-.team-img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: top;
-}
-
-a .team-card {
-    cursor: pointer;
-}
-
 .icon-link {
     text-decoration: none !important;
 }
